@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <title>Document</title>
+    <style>
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      let div = (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+
+            height: "500px",
+            width: "50%",
+            backgroundColor: "red",
+            boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+          }}
+        >
+          <div
+            style={{
+              width: "200px",
+              height: "100%",
+              color: "white",
+              display: "flex",
+              flexDirection: "column",
+              marginTop: "100px",
+            }}
+          >
+            <h2>The Evolution of Arbinb's Frontend</h2>
+
+            <div style={{ textAlign: "center" }}>
+              <h3>@spikebrehm</h3>
+            </div>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
